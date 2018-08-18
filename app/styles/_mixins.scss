@@ -1,0 +1,53 @@
+@mixin flex-box($display: flex, $flex-direction: null, $flex: null) {
+    display: $display;
+    flex-direction: $flex-direction;
+    flex: $flex;
+}
+
+@mixin mainWrapper($width: 75%) {
+    width: $width;
+    margin: 0 auto;
+}
+
+@mixin color-darken-hover($dark-color: null, $bg-color: null) {
+    background: $bg-color;
+    color: $dark-color;
+    transition-duration: 0.3s;
+}
+
+@mixin verticalLine($length: null) {
+    border-left: 1px solid $grey-color;
+
+    // padding-bottom: $length;
+}
+
+@mixin button-with-border($space-up-down: null, $space-left-right: null) {
+    padding: $space-up-down $space-left-right;
+    border: 1px solid $green-color;
+    border-radius: 3px;
+    color: $green-color;
+
+    &:hover {
+        @include color-darken-hover(dakren-color($green-color, 20%));
+
+        border: 1px solid dakren-color($green-color, 10%);
+    }
+}
+
+@mixin round-image-with-round-border($height: 60px) {
+    margin: auto 0;
+    border-radius: 50%;
+    border-top: 2px solid $green-color;
+    border-bottom: 2px solid $green-color;
+    padding: 5px;
+    height: $height;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+@mixin horizontalLine($length: 100%, $thinkness: null) {
+    border-top: $thinkness solid $grey-color;
+    width: $length;
+}

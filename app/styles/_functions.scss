@@ -1,0 +1,5 @@
+@function dakren-color($text-color, $amount-darken) {
+    $dark-color: darken($text-color, $amount-darken);
+
+    @return $dark-color;
+}

@@ -1,0 +1,230 @@
+body .main .mainLeft, body .main .mainLeft .mainLeftCards .mainLeftCardsCard, body .main .mainRight {
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: green;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  background: #dfe6e9 !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #dfe6e9 !important;
+}
+
+body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  margin: 4% auto;
+}
+
+body .main .mainLeft {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main .mainLeft .mainLeftCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow-y: auto;
+  height: 553px;
+  background: #34495e;
+  -ms-flex-preferred-size: 87%;
+      flex-basis: 87%;
+  padding: 20px;
+}
+
+body .main .mainLeft .mainLeftCards::-webkit-scrollbar {
+  width: 0px;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard {
+  background: #ecf0f1;
+  -ms-flex-preferred-size: 210px;
+      flex-basis: 210px;
+  border-radius: 10px;
+  padding: 7px;
+  text-align: center;
+  max-width: 210px;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:first-child img {
+  width: 100%;
+  height: 309px;
+  border-radius: 10px;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:nth-child(2) {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #34495e;
+  min-height: 34px;
+  max-height: 34px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:nth-child(3), body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:nth-child(4) {
+  font-style: italic;
+  font-size: 12px;
+  padding: 5px 0;
+  color: #697179;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:nth-child(4) {
+  padding: 5px 0;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:last-child button {
+  margin: 4px 0;
+  padding: 7px 3px;
+  background: #34495e;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 58px;
+  color: #dfe6e9;
+  font-size: 12px;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:last-child button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:last-child button:nth-child(2) {
+  border-left: 1px solid #ecf0f1;
+  border-right: 1px solid #ecf0f1;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:last-child button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+body .main .mainLeft .mainLeftCards .mainLeftCardsCard div:last-child button:hover {
+  cursor: pointer;
+}
+
+body .main .mainLeft .mainLeftButtons {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  padding: 20px 0;
+  text-align: center;
+  background: #253544;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body .main .mainLeft .mainLeftButtons button {
+  cursor: pointer;
+  width: 150px;
+  margin: 0 10px;
+  padding: 7px 15px;
+  background: #0069D9;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+body .main .mainLeft .mainLeftButtons button:last-child {
+  background: #d63031;
+}
+
+body .main .mainRight {
+  background: #34495e;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  padding: 20px;
+  overflow-y: auto;
+  height: 554px;
+  display: none;
+}
+
+body .main .mainRight::-webkit-scrollbar {
+  width: 0px;
+}
+
+body .main .mainRight .addCardForm form button, body .main .mainRight .editCardForm form button {
+  width: 100%;
+}
+
+body .main .mainRight .addCardForm form small, body .main .mainRight .editCardForm form small {
+  text-align: center;
+}
+
+body .main .mainRight .showMovieDetails {
+  text-align: center;
+  line-height: 1.2;
+}
+
+body .main .mainRight .showMovieDetails div:first-child img {
+  width: 100%;
+  height: 300px;
+}
+
+body .main .mainRight .showMovieDetails div:nth-child(2) {
+  font-size: 30px;
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+body .main .mainRight .showMovieDetails div:nth-child(3), body .main .mainRight .showMovieDetails div:nth-child(4), body .main .mainRight .showMovieDetails div:nth-child(5) {
+  font-style: italic;
+  font-size: 15px;
+  padding: 20px 0;
+}
+
+body .main .mainRight .showMovieDetails div:nth-child(4) a {
+  font-style: normal;
+  color: #00c5b5;
+}
+
+body .main .mainRight .showMovieDetails div:nth-child(4) a:hover {
+  color: #54c7be;
+}
+
+body .main .mainRight .showMovieDetails div:nth-child(6) iframe {
+  width: 100%;
+  height: 480px;
+  padding: 40px 0;
+}
+
+body .main .mainRight .showMovieDetails div:last-child {
+  font-style: italic;
+  padding-top: 20px;
+}
+
+body .main .mainRight .showMovieDetails div:last-child a {
+  font-style: normal;
+  color: #00c5b5;
+}
+
+body .main .mainRight .showMovieDetails div:last-child a:hover {
+  color: #54c7be;
+}
+/*# sourceMappingURL=main.css.map */
